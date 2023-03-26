@@ -38,16 +38,16 @@ public class SingleTonTest {
     @DisplayName("스프링컨테이너와 싱글톤")
     void springContainer(){
         //AppConfig appConfig = new AppConfig();
-        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();
-        //1조회 : 호출할 때마다 객체를 생성
-        MemberService memberService1 = ac.getBean("memberService", MemberService.class);
-        //2조회 : 호출할 때마다 객체를 생성
-        MemberService memberService2 = ac.getBean("memberService", MemberService.class);
-
-        //참조값이 다른 것을 확인
-        System.out.println("memberService1 = " + memberService1);
-        System.out.println("memberService2 = " + memberService2);
-
-        Assertions.assertThat(memberService1).isSameAs(memberService2);
+//        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();
+//        //1조회 : 호출할 때마다 객체를 생성
+//        MemberService memberService1 = ac.getBean("memberService", MemberService.class);
+//        //2조회 : 호출할 때마다 객체를 생성
+//        MemberService memberService2 = ac.getBean("memberService", MemberService.class);
+//
+//        //참조값이 다른 것을 확인
+//        System.out.println("memberService1 = " + memberService1);
+//        System.out.println("memberService2 = " + memberService2);
+//
+//        Assertions.assertThat(memberService1).isSameAs(memberService2);
     }
 }

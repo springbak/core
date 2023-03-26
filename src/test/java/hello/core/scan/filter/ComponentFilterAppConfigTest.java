@@ -15,7 +15,7 @@ public class ComponentFilterAppConfigTest {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ComponentFilterAppConfig.class);
         BeanA beanA = ac.getBean("beanA", BeanA.class);
         Assertions.assertThat(beanA).isNotNull();
-        BeanB beanB = ac.getBean("beanB", BeanB.class);
+        //BeanB beanB = ac.getBean("beanB", BeanB.class);
         org.junit.jupiter.api.Assertions.assertThrows(NoSuchBeanDefinitionException.class,
                 ()-> ac.getBean("beanB", BeanB.class));
     }

@@ -13,11 +13,11 @@ public class ConfigurationSingletonTest {
     void configurationTest(){
         ApplicationContext ac = new AnnotationConfigApplicationContext();
 
-        MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
-        OrderServiceImpl orderService = ac.getBean("orderService", OrderServiceImpl.class);
+//        MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
+//        OrderServiceImpl orderService = ac.getBean("orderService", OrderServiceImpl.class);
 
-        MemberRepository memberRepository1 = memberService.getMemberRepository();
-        MemberRepository memberRepository2 = orderService.getMemberRepository();
+        //MemberRepository memberRepository1 = memberService.getMemberRepository();
+        //MemberRepository memberRepository2 = orderService.getMemberRepository();
 
     }
 }

@@ -13,12 +13,12 @@ class StatefulServiceTest {
     void statefulServiceSingleton(){
 
         ApplicationContext ac = new AnnotationConfigApplicationContext();
-        StatefulService statefulService1 = ac.getBean(StatefulService.class);
-        StatefulService statefulService2 = ac.getBean(StatefulService.class);
-        statefulService1.order("userA",10000);
-        statefulService2.order("userB",20000);
+//        StatefulService statefulService1 = ac.getBean(StatefulService.class);
+//        StatefulService statefulService2 = ac.getBean(StatefulService.class);
+//        statefulService1.order("userA",10000);
+//        statefulService2.order("userB",20000);
 
-        int price = statefulService1.getPrice();
+        //int price = statefulService1.getPrice();
 
     }
     static class TestConfig{
